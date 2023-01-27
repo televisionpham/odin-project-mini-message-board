@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Add new message
+  form(method='post', action='/new')
+    div(class='form-control')
+        label(for='messageUser') User
+        input(id='messageUser', name='messageUser')
+    div(class='form-control')
+        label(for='messageText') Message
+        input(id='messageText', name='messageText')
+    button(type='submit') Submit
